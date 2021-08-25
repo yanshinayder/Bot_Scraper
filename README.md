@@ -1,4 +1,5 @@
 # Bot_Scraper
+### This project aims to create bot to make requests and return information about movies on a given website.
 ### For this project I used the Python 3.9 version
 ### First we need to create our Discord Bot www.discord.com, and choose the developer option.
 ### Once created, we'll configure it to give you the permissions we find necessary.
