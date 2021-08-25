@@ -12,7 +12,7 @@ class RunPeeWeb:
         search_words = ' '.join(words)
         return keywords, search_words
 
-    def  serach(self, keywords):
+    def  search(self, keywords):
         response = requests.get(self.url+keywords, headers = self.headers)
         content = response.content
         soup = BeautifulSoup(content, 'html.parser')
