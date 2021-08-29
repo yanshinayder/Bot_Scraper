@@ -1,6 +1,6 @@
 import discord
 import scraper 
-
+from decouple import config
 
 runpee_web = scraper.RunPeeWeb()
 
@@ -40,5 +40,5 @@ async def on_message(message):
 
 
 
-
-client.run('ODgwMDkzMTU3NzQyNzUxODE2.YSZQoA.KYPs8zdXSdqc-dEPHojTDwybuV4')    
+TOKEN = config("TOKEN")
+client.run(TOKEN)
