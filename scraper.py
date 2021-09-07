@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
+from ratelimit import limits
 
 
 class GoogleWeb:
@@ -27,4 +27,6 @@ class GoogleWeb:
             text = link.text.lower()
             if search_words in text:
                 send_link.add(link.get('href'))
-        return send_link            
+        return send_link     
+            
+
