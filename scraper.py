@@ -1,10 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
 
-class RunPeeWeb:
+
+
+class GoogleWeb:
     def __init__(self):
         self.headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.3'}
-        self.url = 'https://runpee.com/?s='
+        self.url = 'https://www.google.com/search?q='
 
     def keywords_search_words(self, user_message):
         words = user_message.split()[1:]

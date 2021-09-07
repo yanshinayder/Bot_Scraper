@@ -2,17 +2,17 @@ import discord
 import scraper 
 from decouple import config
 
-runpee_web = scraper.RunPeeWeb()
 
-no_result_message = '''Sorry, we can\'t find what you are searching for. We may not have written anything about it yet, 
-but you can subscribe to our news letter for updates of our newest content 
---> https://runpee.com/about-runpee/runpee-movie-newsletter/'''
+google_web = scraper.GoogleWeb()
+
+no_result_message = '''Desculpe buscas não encontrada'''
 
 client = discord.Client()
 
 @client.event
 async def on_ready():
     print(f'{client.user} is now online!')
+
 
 @client.event
 async def on_message(message):
